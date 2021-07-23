@@ -1,5 +1,0 @@
-Known issues:
-
-running 2 persistant spells will remove all when one goes out
-using jump when levitation is active cancles levitation
-you can't engage any teleport spells without enough XP, even if the config says you should
