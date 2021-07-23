@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,Spell:\"Jump\",display:{Lore:['{\"text\":\"§r§8-#DESCRIPTION#-\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Air Jump\",\"color\":\"white\"},{\"text\":\")\"}]}'},Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

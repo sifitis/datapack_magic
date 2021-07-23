@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1.5

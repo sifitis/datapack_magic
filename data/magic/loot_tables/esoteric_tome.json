@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,EsotericTome:1b,Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

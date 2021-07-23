@@ -1,0 +1,1 @@
+execute at @s run playsound minecraft:entity.illusioner.mirror_move master @s ~ ~ ~ 1 2

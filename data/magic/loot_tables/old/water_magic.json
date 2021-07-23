@@ -1,0 +1,172 @@
+{
+    "pools": [
+        {
+			"rolls": 1,
+			"entries": [
+				{
+					"weight": 40,
+					"type": "item",
+					"name": "minecraft:paper",
+					"functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{
+								SpellScroll:1b,
+								Spell:\"Rain\",
+								display:{
+									Name:\"{
+										\\\"text\\\":\\\"Spell Scroll (\\\",
+										\\\"color\\\":\\\"gray\\\",
+										\\\"italic\\\":0,
+										\\\"extra\\\":[
+											{\\\"text\\\":\\\"Rain\\\",\\\"color\\\":\\\"blue\\\"},
+											{\\\"text\\\":\\\")\\\"}
+										]
+									}\",
+									Lore:[
+										\"§8Invoke the power of water\",
+										\"§8and force the clouds above\",
+										\"§8to open and let the rain\",
+										\"§8fall.\",
+										\"§8------------------------\",
+										\"§7Place in offhand slot to use\"
+									]
+								},
+								Enchantments:[
+									{lvl:1,id:\"minecraft:channeling\"}
+								]
+							}"
+						}
+					]	
+				},
+				{
+					"weight": 1,
+					"type": "item",
+					"name": "minecraft:book",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{
+								SpellTome:1b,
+								Spell:\"Rain\",
+								display:{
+									Name:\"{
+										\\\"text\\\":\\\"Spell Tome (\\\",
+										\\\"color\\\":\\\"gray\\\",
+										\\\"italic\\\":0,
+										\\\"extra\\\":[
+											{\\\"text\\\":\\\"Rain\\\",\\\"color\\\":\\\"blue\\\"},
+											{\\\"text\\\":\\\")\\\"}
+										]
+									}\",
+									Lore:[
+										\"§8Invoke the power of water\",
+										\"§8and force the clouds above\",
+										\"§8to open and let the rain\",
+										\"§8fall.\",
+										\"§8------------------------\",
+										\"§7Place in offhand slot to use\",
+										\"§7[Infinite Uses]\"
+									]
+								},
+								Enchantments:[
+									{lvl:1,id:\"minecraft:channeling\"}
+								]
+							}"
+						}
+					]	
+				},
+				{
+					"weight": 40,
+					"type": "item",
+					"name": "minecraft:paper",
+					"functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{
+								SpellScroll:1b,
+								Spell:\"Geyser\",
+								display:{
+									Name:\"{
+										\\\"text\\\":\\\"Spell Scroll (\\\",
+										\\\"color\\\":\\\"gray\\\",
+										\\\"italic\\\":0,
+										\\\"extra\\\":[
+											{\\\"text\\\":\\\"Geyser\\\",\\\"color\\\":\\\"blue\\\"},
+											{\\\"text\\\":\\\")\\\"}
+										]
+									}\",
+									Lore:[\"§8Focus on a target and draw\",
+										\"§8water from the earth to drench\",
+										\"§8them and send them flying\",
+										\"§8------------------------\",
+										\"§7Place in offhand slot to use\"
+									]
+								},
+								Enchantments:[
+									{lvl:1,id:\"minecraft:channeling\"}
+								]
+							}"
+						}
+					]	
+				},
+				{
+					"weight": 1,
+					"type": "item",
+					"name": "minecraft:book",
+					"functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        },
+						{
+							"function": "set_nbt",
+							"tag": "{
+								SpellTome:1b,
+								Spell:\"Geyser\",
+								display:{
+									Name:\"{
+										\\\"text\\\":\\\"Spell Tome (\\\",
+										\\\"color\\\":\\\"gray\\\",
+										\\\"italic\\\":0,
+										\\\"extra\\\":[
+											{\\\"text\\\":\\\"Geyser\\\",\\\"color\\\":\\\"blue\\\"},
+											{\\\"text\\\":\\\")\\\"}
+										]
+									}\",
+									Lore:[\"§8Focus on a target and draw\",
+										\"§8water from the earth to drench\",
+										\"§8them and send them flying\",
+										\"§8------------------------\",
+										\"§7Place in offhand slot to use\",
+										\"§7[Infinite Uses]\"
+									]
+								},
+								Enchantments:[
+									{lvl:1,id:\"minecraft:channeling\"}
+								]
+							}"
+						}
+					]	
+				}
+			]
+		}
+	]
+}	

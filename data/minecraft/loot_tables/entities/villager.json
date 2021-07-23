@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+		"rolls": 1,
+		"entries": [
+			{
+				"type": "loot_table",
+				"name": "convert:med_value",
+				"weight": 1
+			}
+		]
+	}
+  ]
+}
