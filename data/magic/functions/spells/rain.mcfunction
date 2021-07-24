@@ -25,4 +25,4 @@ scoreboard objectives remove rain
 #---------------------------------------------------------------------------------------------#
 
 item replace entity @s weapon.offhand with minecraft:air
-function magic:givebook/rain_givebook
+function magic:givebook/rain
