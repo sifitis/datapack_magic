@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Levitate\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Levitate\",\"color\":\"white\"},{\"text\":\")\"}]}'},Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                            "tag": "{SpellTome:1b,Spell:\"Levitate\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Levitate\",\"color\":\"white\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

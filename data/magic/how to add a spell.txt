@@ -1,9 +1,0 @@
-spell making process:
-
-add cooldown to core:load_objectives
-write give and givebook functions
-add to spell select
-add to cooldown driver
-write spell
-write failed spell
-add to loot tables
