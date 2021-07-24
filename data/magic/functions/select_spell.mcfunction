@@ -64,14 +64,14 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Jump"}}]}] at @s if score 
 ##===Ouranomancy===##
 
 #Teleport
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Teleport"}}]}] at @s if score @s __xp >= cTELEPORT config_magic if score bTELEPORT config_magic matches 1.. run function magic:spells/teleport
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Teleport"}}]}] at @s unless score @s __xp >= cTELEPORT config_magic run function magic:spells/fail/teleport_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Teleport"}}]}] at @s if score bTELEPORT config_magic matches 1.. run function magic:spells/teleport
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Teleport"}}]}] at @s if score bTELEPORT config_magic matches ..0 run function magic:spells/fail/teleport_fail
+#-- This spell requires doing an XP pass/fail check AFTER deciding if it is setting or engaging the teleport because it only charges when doing one or the other depending on the config --#
 
 #Mass Teleport
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s if score @s __xp >= cMASS_TP config_magic if score bMASS_TP config_magic matches 1.. run function magic:spells/mass_teleport
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s unless score @s __xp >= cMASS_TP config_magic run function magic:spells/fail/mass_teleport_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s if score bMASS_TP config_magic matches 1.. run function magic:spells/mass_teleport
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s if score bMASS_TP config_magic matches ..0 run function magic:spells/fail/mass_teleport_fail
+#-- This spell requires doing an XP pass/fail check AFTER deciding if it is setting or engaging the teleport because it only charges when doing one or the other depending on the config --#
 
 ##===Somatics===#
 
