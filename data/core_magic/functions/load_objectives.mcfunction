@@ -4,11 +4,10 @@
 #      Outputs: None
 #    Tagged in: #minecraft:load
 
-tellraw @a {"text":"Running SpellTome v2.2.1 by sifitis","color":"dark_purple"}
-
 scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
 
+#===These get run to initialize all config vars==#
 function config:config_magic
 function config:config_magic/config_spells
 function config:config_magic/config_spells/arcanism
@@ -20,11 +19,11 @@ function config:config_magic/config_spells/geomancy
 function config:config_magic/config_spells/somatics
 
 
-
 #=========MATH STUFF=============#
 function math:util_random/generate_obj
-
 function math:util_constants/generate_obj
+#================================#
+
 
 #   used in magic:calc_current_xp
 scoreboard players set CONST_405 m_constants 405
@@ -39,3 +38,5 @@ scoreboard players set CONST_1625 m_constants 1625
 team add no_collision
 team modify no_collision collisionRule never
 #===============================#
+
+function core_magic:splash
