@@ -1,4 +1,4 @@
-
+function magic:sound_effects/use_scroll
 
 #-------------------------------------COST CONTROL--------------------------------------------#
 execute if score bTP_COST_ON_SET config_magic matches ..0 run scoreboard players operation XP_DELTA reduce_xp = cTELEPORT config_magic
