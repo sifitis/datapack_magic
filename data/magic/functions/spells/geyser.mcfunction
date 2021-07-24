@@ -26,4 +26,4 @@ execute as @e[tag=geyser] as @s[tag=new] run tag @s remove new
 #---------------------------------------------------------------------------------------------#
 
 item replace entity @s weapon.offhand with minecraft:air
-function magic:givebook/geyser_givebook
+function magic:givebook/geyser
