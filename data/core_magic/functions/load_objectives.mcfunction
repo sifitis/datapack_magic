@@ -4,7 +4,7 @@
 #      Outputs: None
 #    Tagged in: #minecraft:load
 
-tellraw @a {"text":"Running Spellbooks v2.1.0 by sifitis","color":"dark_purple"}
+tellraw @a {"text":"Running SpellTomes v2.3 Experimental by sifitis","color":"dark_purple"}
 
 scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
