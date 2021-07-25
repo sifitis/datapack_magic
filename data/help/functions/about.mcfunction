@@ -1,0 +1,1 @@
+tellraw @s {"text":"","color":"gray","extra":[{"text":"This datapack was written by sifitis for use on the Insomniac Servers SMP server."}]}
