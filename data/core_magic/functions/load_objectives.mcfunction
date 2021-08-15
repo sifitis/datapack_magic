@@ -6,6 +6,7 @@
 
 scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
+scoreboard objectives add persistance dummy
 
 #===These get run to initialize all config vars==#
 function config:config_magic

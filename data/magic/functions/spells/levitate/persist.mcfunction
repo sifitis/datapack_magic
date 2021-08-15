@@ -8,4 +8,4 @@ execute unless entity @s[tag=farting] run particle minecraft:dust 0.8 0.8 0.8 5 
 
 execute if score @s cd_levitate matches 1.. run scoreboard players remove @s cd_levitate 1
 execute if score @s cd_levitate matches ..0 run tag @s remove levitate
-execute if score @s cd_levitate matches ..0 run tag @s remove persistant
+execute if score @s cd_levitate matches ..0 run scoreboard players remove @s persistance 1

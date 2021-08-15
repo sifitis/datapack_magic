@@ -7,7 +7,7 @@ function magic:reduce_xp
 
 playsound minecraft:block.bubble_column.upwards_inside master @s ~ ~ ~ 3 0
 tag @s add mm_blessing
-tag @s add persistant
+scoreboard players add @s persistance 1
 
 scoreboard objectives add cd_mm_blessing dummy
 scoreboard players operation @s cd_mm_blessing = ttlMM_BLESSING config_magic

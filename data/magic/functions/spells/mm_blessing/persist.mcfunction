@@ -9,4 +9,4 @@ effect give @s minecraft:conduit_power 1 0 true
 
 execute if score @s cd_mm_blessing matches 1.. run scoreboard players remove @s cd_mm_blessing 1
 execute if score @s cd_mm_blessing matches ..0 run tag @s remove mm_blessing
-execute if score @s cd_mm_blessing matches ..0 run tag @s remove persistant
+execute if score @s cd_mm_blessing matches ..0 run scoreboard players remove @s persistance 1
