@@ -10,11 +10,16 @@ execute if score @s cd_mtp_engage matches 20.. if score @s cd_mtp_engage <= R3_s
 
 execute if score @s cd_mtp_engage matches 20.. if score @s cd_mtp_engage <= R3_start cd_mtp_engage if entity @e[distance=..1,type=!marker] run function magic:spells/mass_teleport/teleport_entity
 
+#Questionable sound effects
+#execute if score @s cd_mtp_engage matches 40.. if score @s cd_mtp_engage <= R3_start cd_mtp_engage as @a[distance=..10] run playsound minecraft:block.conduit.ambient master @s ~ ~ ~ 0.2 1 0.2
+
 #some sparkles for when the rings appear
 execute if score @s cd_mtp_engage = R1_start cd_mtp_engage run particle firework ~ ~0.2 ~ 1 0 1 0.1 100 force
 execute if score @s cd_mtp_engage = R2_start cd_mtp_engage run particle firework ~ ~0.2 ~ 1 0 1 0.1 100 force
 execute if score @s cd_mtp_engage = R3_start cd_mtp_engage run particle soul_fire_flame ~ ~0.3 ~ 0 0 0 1 500 force
 execute if score @s cd_mtp_engage = R3_start cd_mtp_engage run particle firework ~ ~1 ~ 0.3 1 0.3 0 100 force
+
+
 
 #aaaand when it disappears
 execute if score @s cd_mtp_engage matches 20 run particle soul_fire_flame ~ ~0.1 ~ 0.6 0 0.6 1 500 force

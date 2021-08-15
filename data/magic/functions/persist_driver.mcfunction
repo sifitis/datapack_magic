@@ -10,3 +10,4 @@ execute as @s[tag=mass_tp_entry] at @s run function magic:spells/mass_teleport/e
 execute as @s[tag=mm_blessing] at @s run function magic:spells/mm_blessing/persist
 #execute as @s[tag=teleport_engage] at @s run function magic:spells/teleport/engage/persist
 execute as @s[tag=levitate] at @s run function magic:spells/levitate/persist
+execute as @s[tag=smelt] at @s run function magic:spells/smelt/persist

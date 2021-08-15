@@ -21,4 +21,7 @@ execute if score bSMELT config_magic matches 1.. run tellraw @s {"text":"","colo
 execute unless score cSMELT config_magic matches -2147483648..2147483647 run scoreboard players set cSMELT config_magic 300
 tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set cSMELT config_magic "}},{"text":" ["},{"score":{"name":"cSMELT","objective":"config_magic"},"color":"aqua"},{"text":"] XP Cost of the Smelt Spell "}]}
 
+execute unless score ttlSMELT config_magic matches -2147483648..2147483647 run scoreboard players set ttlSMELT config_magic 160
+tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set ttlSMELT config_magic "}},{"text":" ["},{"score":{"name":"ttlSMELT","objective":"config_magic"},"color":"aqua"},{"text":"] Warmup time for Smelt Spell "}]}
+
 tellraw @s {"text":"================================================","color":"gray"}
