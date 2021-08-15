@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Silence\",display:{Lore:['{\"text\":\"§r§8DESCRIPTION\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Silence\",\"color\":\"white\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,Spell:\"Silence\",display:{Lore:['{\"text\":\"§r§8This tome weaves air currents\"}','{\"text\":\"§r§8tightly around the nearest\"}','{\"text\":\"§r§8target that prevent any sound\"}','{\"text\":\"§r§8from escaping.  Using it a second\"}','{\"text\":\"§r§8time unwinds the spell.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Silence\",\"color\":\"white\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

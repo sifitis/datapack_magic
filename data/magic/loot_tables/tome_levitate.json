@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Levitate\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Levitate\",\"color\":\"white\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,Spell:\"Levitate\",display:{Lore:['{\"text\":\"§r§8This tome creates a torrent of\"}','{\"text\":\"§r§8wind strong enough to carry you\"}','{\"text\":\"§r§8skyward.  A warning though- using\"}','{\"text\":\"§r§8it while already levitating creates\"}','{\"text\":\"§r§8turbulence that  cancels out the\"}','{\"text\":\"§r§8spell.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Levitate\",\"color\":\"white\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Mermaids Blessing\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Mermaid\\'s Blessing\",\"color\":\"blue\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,Spell:\"Mermaids Blessing\",display:{Lore:['{\"text\":\"§r§8Legends say that this tome was\"}','{\"text\":\"§r§8crafted with the blessing of a\"}','{\"text\":\"§r§8powerful mermaid.  Anyone who\"}','{\"text\":\"§r§8uses it is gifted with unparalleled\"}','{\"text\":\"§r§8aquatic abilities for a time.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Mermaid\\'s Blessing\",\"color\":\"blue\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }
