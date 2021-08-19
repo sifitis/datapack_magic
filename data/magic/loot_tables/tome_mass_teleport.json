@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,TeleportSet:0b,TeleportData:{},Spell:\"Mass Teleport\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Mass Teleport\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,TeleportSet:0b,TeleportData:{},Spell:\"Mass Teleport\",display:{Lore:['{\"text\":\"§r§8This tome contains a very strange and advance\"}','{\"text\":\"§r§8magic that creates a traversable fold in space-\"}','{\"text\":\"§r§8a portal of sorts- but doesn’t seem to be able\"}','{\"text\":\"§r§8to maintain it for very long.\"}','{\"text\":\"§r§8- Use once to store a destination\"}','{\"text\":\"§r§8- Use again to create entrance portal\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Mass Teleport\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

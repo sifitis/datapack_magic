@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,TeleportSet:0b,TeleportData:{},Spell:\"Teleport\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Teleport\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,TeleportSet:0b,TeleportData:{},Spell:\"Teleport\",display:{Lore:['{\"text\":\"§r§8The magic in this book is alien and strange.\"}','{\"text\":\"§r§8It seems to relate to bending space to allow\"}','{\"text\":\"§r§8instantaneous travel.\"}','{\"text\":\"§r§8- Use once to store a destination\"}','{\"text\":\"§r§8- Use again to travel\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Teleport\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }
