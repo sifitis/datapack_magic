@@ -27,10 +27,11 @@ function math:util_constants/generate_obj
 
 
 #   used in magic:calc_current_xp
-scoreboard players set CONST_405 m_constants 405
-scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_10 m_constants 10
+scoreboard players set CONST_16 m_constants 16
+scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_45 m_constants 45
+scoreboard players set CONST_405 m_constants 405
 scoreboard players set CONST_1625 m_constants 1625
 #================================#
 

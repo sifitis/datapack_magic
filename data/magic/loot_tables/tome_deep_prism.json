@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:esoteric_tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Spell:\"Deep Prism\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Esoteric Spell Tome (\",\"italic\":false,\"color\":\"gold\",\"extra\":[{\"text\":\"Deep Prism\",\"color\":\"dark_purple\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
