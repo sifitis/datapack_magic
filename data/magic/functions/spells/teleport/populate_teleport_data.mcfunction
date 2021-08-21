@@ -12,7 +12,6 @@ execute if predicate predicate_lib:dimension/in_nether as @e[distance=..1,tag=te
 execute if predicate predicate_lib:dimension/in_end as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 2
 execute if predicate predicate_lib:dimension/in_deep_prism as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 3
 
-
 execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Pos set from entity @e[distance=..1,tag=teleport_setter,limit=1] Pos
 
 execute store result score Xpos teleport run data get entity @s Pos[0] 1.0

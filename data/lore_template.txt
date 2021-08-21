@@ -1,0 +1,3 @@
+
+
+['{\"text\":\"§r§8\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}']

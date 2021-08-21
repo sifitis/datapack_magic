@@ -8,6 +8,9 @@ scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
 scoreboard objectives add persistance dummy
 
+function core_magic:self_driver_init
+execute in magic:deep_prism run forceload add 0 0
+
 #===These get run to initialize all config vars==#
 function config:config_magic
 function config:config_magic/config_spells
@@ -33,6 +36,7 @@ scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_45 m_constants 45
 scoreboard players set CONST_405 m_constants 405
 scoreboard players set CONST_1625 m_constants 1625
+scoreboard players set CONST_MAX m_constants 
 #================================#
 
 
