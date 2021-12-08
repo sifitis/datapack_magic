@@ -1,7 +1,7 @@
 function magic:sound_effects/use_scroll
 
 #-------------------------------------COST CONTROL--------------------------------------------#
-scoreboard players operation XP_DELTA reduce_xp = cRESTORE config_magic
+scoreboard players operation XP_DELTA reduce_xp = cSMELT config_magic
 function magic:reduce_xp
 #---------------------------------------------------------------------------------------------#
 
