@@ -9,6 +9,9 @@ scoreboard objectives add config_magic dummy
 scoreboard objectives add persistance dummy
 
 function core_magic:self_driver_init
+execute in minecraft:overworld run forceload add 0 0
+execute in minecraft:the_nether run forceload add 0 0
+execute in minecraft:the_end run forceload add 0 0
 execute in magic:deep_prism run forceload add 0 0
 
 #===These get run to initialize all config vars==#

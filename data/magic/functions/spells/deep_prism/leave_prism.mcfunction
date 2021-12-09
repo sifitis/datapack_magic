@@ -1,7 +1,7 @@
 
 function magic:sound_effects/use_scroll
 
-execute in minecraft:overworld run tp @s 0 10 0
+function magic:spells/deep_prism/leave_prism/a
 
 #---------------------------------------------------------------------------------------------#
 # EVERYTHING BELOW THIS LINE IS FOR RETURNING THE SCROLL ITEMS AFTER YOU USE ONE
