@@ -2,7 +2,7 @@ scoreboard objectives add reduce_xp dummy
 
 function magic:calc_current_xp
 
-##===Arcane===##
+#===Arcane===#
 
 #Prestidigitation
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at @s if score @s __xp >= cPREST config_magic if score bPREST config_magic matches 1.. run function magic:spells/prestidigitation
@@ -10,22 +10,23 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at @s if score bPREST config_magic matches ..0 run function magic:spells/fail/prestidigitation_fail
 
 #Deep Prism
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score @s __xp >= cDPRISM config_magic if score bDPRISM config_magic matches 1.. run function magic:spells/deep_prism
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score @s __xp >= cDPRISM config_magic if score bDPRISM config_magic matches 1.. unless entity @s[tag=dprism] run function magic:spells/deep_prism
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s unless score @s __xp >= cDPRISM config_magic run function magic:spells/fail/deep_prism_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score bDPRISM config_magic matches ..0 run function magic:spells/fail/deep_prism_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if entity @s[tag=dprism] run function magic:spells/fail/deep_prism_fail
 
-
-#===Pyromancy===##
+#===Pyromancy===#
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s if score @s __xp >= cFIREBALL config_magic if score bFIREBALL config_magic matches 1.. run function magic:spells/fireball
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s unless score @s __xp >= cFIREBALL config_magic run function magic:spells/fail/fireball_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s if score bFIREBALL config_magic matches ..0 run function magic:spells/fail/fireball_fail
 
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score @s __xp >= cSMELT config_magic if score bSMELT config_magic matches 1.. run function magic:spells/smelt
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score @s __xp >= cSMELT config_magic if score bSMELT config_magic matches 1.. unless entity @s[tag=smelt] run function magic:spells/smelt
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s unless score @s __xp >= cSMELT config_magic run function magic:spells/fail/smelt_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score bSMELT config_magic matches ..0 run function magic:spells/fail/smelt_fail
-##===Geomancy===##
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if entity @s[tag=smelt] run function magic:spells/fail/smelt_fail
+#===Geomancy===#
 
-##===Purification===##
+#===Purification===#
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Restore"}}]}] at @s if score @s __xp >= cRESTORE config_magic if score bRESTORE config_magic matches 1.. run function magic:spells/restore
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Restore"}}]}] at @s unless score @s __xp >= cRESTORE config_magic run function magic:spells/fail/restore_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Restore"}}]}] at @s if score bRESTORE config_magic matches ..0 run function magic:spells/fail/restore_fail
@@ -34,7 +35,11 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s if s
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s unless score @s __xp >= cSUNNY_DAY config_magic run function magic:spells/fail/sunny_day_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s if score bSUNNY_DAY config_magic matches ..0 run function magic:spells/fail/sunny_day_fail
 
-##===Hydromancy===##
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score @s __xp >= cLUMINANCE config_magic if score bLUMINANCE config_magic matches 1.. run function magic:spells/luminance
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s unless score @s __xp >= cLUMINANCE config_magic run function magic:spells/fail/luminance_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score bLUMINANCE config_magic matches ..0 run function magic:spells/fail/luminance_fail
+
+#===Hydromancy===#
 
 #Rain
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Rain"}}]}] at @s if score @s __xp >= cRAIN config_magic if score bRAIN config_magic matches 1.. run function magic:spells/rain
@@ -47,11 +52,12 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Geyser"}}]}] at @s unless 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Geyser"}}]}] at @s if score bGEYSER config_magic matches ..0 run function magic:spells/fail/geyser_fail
 
 #Mermaid's Blessing
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if score @s __xp >= cMM_BLESSING config_magic if score bMM_BLESSING config_magic matches 1.. run function magic:spells/mm_blessing
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if score @s __xp >= cMM_BLESSING config_magic if score bMM_BLESSING config_magic matches 1.. unless entity @s[tag=mm_blessing] run function magic:spells/mm_blessing
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s unless score @s __xp >= cMM_BLESSING config_magic run function magic:spells/fail/mm_blessing_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if score bMM_BLESSING config_magic matches ..0 run function magic:spells/fail/mm_blessing_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if entity @s[tag=mm_blessing] run function magic:spells/fail/mm_blessing_fail
 
-##===Aeromancy===##
+#===Aeromancy===#
 
 #Levitate
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if score @s __xp >= cLEVITATE config_magic if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
@@ -68,7 +74,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Jump"}}]}] at @s if score 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Jump"}}]}] at @s unless score @s __xp >= cJUMP config_magic run function magic:spells/fail/jump_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Jump"}}]}] at @s if score bJUMP config_magic matches ..0 run function magic:spells/fail/jump_fail
 
-##===Ouranomancy===##
+#===Ouranomancy===#
 
 #Teleport
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Teleport"}}]}] at @s if score bTELEPORT config_magic matches 1.. run function magic:spells/teleport
@@ -80,7 +86,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s if score bMASS_TP config_magic matches ..0 run function magic:spells/fail/mass_teleport_fail
 #-- This spell requires doing an XP pass/fail check AFTER deciding if it is setting or engaging the teleport because it only charges when doing one or the other depending on the config --#
 
-##===Somatics===#
+#===Somatics===#
 
 #Vitalize
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Vitalize"}}]}] at @s if score @s __xp >= cVITALIZE config_magic if score bVITALIZE config_magic matches 1.. run function magic:spells/vitalize

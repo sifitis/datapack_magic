@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,Spell:\"Luminance\",display:{Lore:['{\"text\":\"§r§8The magic inside this tome seems\"}','{\"text\":\"§r§8to almost crackle with purity. You\"}','{\"text\":\"§r§8suspect that unleashing it could\"}','{\"text\":\"§r§8even dissipate a strong storm…\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Luminance\",\"color\":\"yellow\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
