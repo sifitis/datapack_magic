@@ -25,7 +25,11 @@ execute as @s[tag=!PERM_dp_gen] run function magic:spells/deep_prism/generate_ch
 #forceload the prism
 function magic:spells/deep_prism/forceload_prism/a
 
+#Various effects
 function magic:sound_effects/use_scroll
+playsound minecraft:item.trident.throw master @s ~ ~ ~ 1 2
+particle minecraft:crit ~ ~ ~ 1 1 1 2 500 force
+function magic:visual_effects/witch_triangle_large
 
 #---------------------------------------------------------------------------------------------#
 # EVERYTHING BELOW THIS LINE IS FOR RETURNING THE SCROLL ITEMS AFTER YOU USE ONE

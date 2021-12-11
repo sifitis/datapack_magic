@@ -12,3 +12,5 @@ scoreboard players add Z deep_prism 16
 
 #send player to chamber
 function magic:spells/deep_prism/goto_chamber/a
+
+

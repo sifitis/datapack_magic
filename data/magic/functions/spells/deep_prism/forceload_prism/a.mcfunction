@@ -1,8 +1,6 @@
 
 ## -- Executed as the player -- ##
 
-say A
-
 #create executor for part b
 execute in magic:deep_prism run summon minecraft:marker 0 10 0 {Tags:["dp_preload"]}
 

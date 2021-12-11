@@ -39,7 +39,10 @@ scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_45 m_constants 45
 scoreboard players set CONST_405 m_constants 405
 scoreboard players set CONST_1625 m_constants 1625
-scoreboard players set CONST_MAX m_constants 
+scoreboard players set CONST_MAX m_constants
+
+# used in witch_shafts_10 VFX
+scoreboard players set CONST_21 m_constants 21
 #================================#
 
 
