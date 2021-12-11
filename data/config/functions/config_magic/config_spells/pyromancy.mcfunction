@@ -14,6 +14,7 @@ tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gra
 
 tellraw @s {"text":""}
 
+# Smelt
 execute unless score bSMELT config_magic matches -2147483648..2147483647 run scoreboard players set bSMELT config_magic 1
 execute if score bSMELT config_magic matches ..0 run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bSMELT config_magic 1"}},{"text":" ["},{"text":"FALSE","color":"red"},{"text":"] Allow Smelt Spell. "}]}
 execute if score bSMELT config_magic matches 1.. run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bSMELT config_magic 0"}},{"text":" ["},{"text":"TRUE","color":"green"},{"text":"] Allow Smelt Spell. "}]}

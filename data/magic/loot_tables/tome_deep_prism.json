@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:esoteric_tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Spell:\"Deep Prism\",display:{Lore:['{\"text\":\"§8§oThere inky black and palid gleam a haven does conceal,\"}','{\"text\":\"§8§oa world contained by nothing and where nothing there is real.\"}','{\"text\":\"§8§oAlone though you may wander, only there to call your own,\"}','{\"text\":\"§8§oin wake of light they follow you to see what you have grown.\"}','{\"text\":\"§8§oThe claim is yours to make \\\'tween limpid walls and floor and sky\"}','{\"text\":\"§8§obut woe to those who go beyond- to those who choose to die.\"}','{\"text\":\"§r§7[Place in offhand to use]\"}'],Name:'{\"text\":\"Esoteric Spell Tome (\",\"italic\":false,\"color\":\"gold\",\"extra\":[{\"text\":\"Deep Prism\",\"color\":\"dark_purple\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

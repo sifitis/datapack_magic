@@ -1,0 +1,28 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.125,
+  "scale": 0.05,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "category": "plains",
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 6379062,
+    "water_fog_color": 4142631,
+    "grass_color_modifier": "none",
+    "particle": {
+      "options": {
+        "type": "minecraft:end_rod"
+      },
+      "probability": 0.0002
+    }
+  },
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

@@ -8,6 +8,12 @@ scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
 scoreboard objectives add persistance dummy
 
+function core_magic:self_driver_init
+execute in minecraft:overworld run forceload add 0 0
+execute in minecraft:the_nether run forceload add 0 0
+execute in minecraft:the_end run forceload add 0 0
+execute in magic:deep_prism run forceload add 0 0
+
 #===These get run to initialize all config vars==#
 function config:config_magic
 function config:config_magic/config_spells
@@ -27,11 +33,16 @@ function math:util_constants/generate_obj
 
 
 #   used in magic:calc_current_xp
-scoreboard players set CONST_405 m_constants 405
-scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_10 m_constants 10
+scoreboard players set CONST_16 m_constants 16
+scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_45 m_constants 45
+scoreboard players set CONST_405 m_constants 405
 scoreboard players set CONST_1625 m_constants 1625
+scoreboard players set CONST_MAX m_constants
+
+# used in witch_shafts_10 VFX
+scoreboard players set CONST_21 m_constants 21
 #================================#
 
 
