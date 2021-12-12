@@ -17,7 +17,6 @@ execute if score Dim better_tp matches 2 in minecraft:the_end run summon minecra
 execute if score Dim better_tp matches 3 in magic:deep_prism run summon minecraft:area_effect_cloud 0 10 0 {Tags:["better_tp"],Duration:1}
 
 # Execute part b
-tellraw @a {"score":{"objective":"better_tp","name":"Dim"}}
 execute if score Dim better_tp matches 0 in minecraft:overworld as @e[type=area_effect_cloud,tag=better_tp] at @s run function magic:better_teleport/better_teleport_b
 execute if score Dim better_tp matches 1 in minecraft:the_nether as @e[type=area_effect_cloud,tag=better_tp] at @s run function magic:better_teleport/better_teleport_b
 execute if score Dim better_tp matches 2 in minecraft:the_end as @e[type=area_effect_cloud,tag=better_tp] at @s run function magic:better_teleport/better_teleport_b

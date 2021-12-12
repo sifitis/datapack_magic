@@ -10,6 +10,7 @@
     "has_skylight": false,
     "has_ceiling": false,
     "coordinate_scale": 1,
+    "fixed_time":6000,
     "ambient_light": 0,
     "logical_height": 32,
     "effects": "minecraft:the_nether",

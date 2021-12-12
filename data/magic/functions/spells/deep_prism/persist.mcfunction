@@ -29,4 +29,18 @@ execute if score @s cd_dprism matches -1 run particle minecraft:crit ~ ~ ~ 1 1 1
 execute if score @s cd_dprism matches -1 run function magic:visual_effects/witch_triangle_large
 execute if score @s cd_dprism matches -1 run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 0
 execute if score @s cd_dprism matches -1 run playsound minecraft:entity.lightning_bolt.impact master @s ~ ~ ~ 0.2 0
-#execute if score @s cd_dprism matches -1 run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 2
+
+execute if score @s cd_dprism matches -1 positioned ~15 ~ ~ run particle end_rod ~ ~ ~ 0 0 8 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~-15 ~ ~ run particle end_rod ~ ~ ~ 0 0 8 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~ ~ ~15 run particle end_rod ~ ~ ~ 8 0 0 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~ ~ ~-15 run particle end_rod ~ ~ ~ 8 0 0 0 100 force
+
+execute if score @s cd_dprism matches -1 positioned ~15 ~30 ~ run particle end_rod ~ ~ ~ 0 0 8 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~-15 ~30 ~ run particle end_rod ~ ~ ~ 0 0 8 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~ ~30 ~15 run particle end_rod ~ ~ ~ 8 0 0 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~ ~30 ~-15 run particle end_rod ~ ~ ~ 8 0 0 0 100 force
+
+execute if score @s cd_dprism matches -1 positioned ~15 ~15 ~15 run particle end_rod ~ ~ ~ 0 8 0 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~-15 ~15 ~-15 run particle end_rod ~ ~ ~ 0 8 0 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~-15 ~15 ~15 run particle end_rod ~ ~ ~ 0 8 0 0 100 force
+execute if score @s cd_dprism matches -1 positioned ~15 ~15 ~-15 run particle end_rod ~ ~ ~ 0 8 0 0 100 force
