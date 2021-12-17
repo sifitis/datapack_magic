@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{TeleportSet:0b,GatewayActive:0b,TeleportData:{},Spell:\"Gateway\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Esoteric Spell Tome (\",\"italic\":false,\"color\":\"gold\",\"extra\":[{\"text\":\"Gateway\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{GateStatus:0,TeleportData:{},Spell:\"Gateway\",display:{Lore:['{\"text\":\"§r§8Stuff.\"}'],Name:'{\"text\":\"Esoteric Spell Tome (\",\"italic\":false,\"color\":\"gold\",\"extra\":[{\"text\":\"Gateway\",\"color\":\"dark_aqua\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

@@ -19,7 +19,7 @@ execute unless score bDPRISM config_magic matches -2147483648..2147483647 run sc
 execute if score bDPRISM config_magic matches ..0 run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bDPRISM config_magic 1"}},{"text":" ["},{"text":"FALSE","color":"red"},{"text":"] Allow Deep Prism Spell. "}]}
 execute if score bDPRISM config_magic matches 1.. run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bDPRISM config_magic 0"}},{"text":" ["},{"text":"TRUE","color":"green"},{"text":"] Allow Deep Prism Spell. "}]}
 
-execute unless score cDPRISM config_magic matches -2147483648..2147483647 run scoreboard players set cDPRISM config_magic 400
+execute unless score cDPRISM config_magic matches -2147483648..2147483647 run scoreboard players set cDPRISM config_magic 100
 tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set cDPRISM config_magic "}},{"text":" ["},{"score":{"name":"cDPRISM","objective":"config_magic"},"color":"aqua"},{"text":"] XP Cost of the Deep Prism Spell "}]}
 
 execute unless score ttlDPRISM config_magic matches -2147483648..2147483647 run scoreboard players set ttlDPRISM config_magic 60

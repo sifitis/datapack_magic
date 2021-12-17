@@ -35,4 +35,14 @@ execute if score bMTP_COST_ON_SET config_magic matches 1.. run tellraw @s {"text
 execute unless score MTP_DURATION config_magic matches -2147483648..2147483647 run scoreboard players set MTP_DURATION config_magic 200
 tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set MTP_DURATION config_magic "}},{"text":" ["},{"score":{"name":"MTP_DURATION","objective":"config_magic"},"color":"aqua"},{"text":"] Duration of Mass TP Circle in ticks. "}]}
 
+tellraw @s {"text":""}
+
+#--- Gateway ---#
+execute unless score bGATEWAY config_magic matches -2147483648..2147483647 run scoreboard players set bGATEWAY config_magic 1
+execute if score bGATEWAY config_magic matches ..0 run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bGATEWAY config_magic 1"}},{"text":" ["},{"text":"FALSE","color":"red"},{"text":"] Allow Gateway Spell. "}]}
+execute if score bGATEWAY config_magic matches 1.. run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bGATEWAY config_magic 0"}},{"text":" ["},{"text":"TRUE","color":"green"},{"text":"] Allow Gateway Spell. "}]}
+
+execute unless score cGATEWAY config_magic matches -2147483648..2147483647 run scoreboard players set cGATEWAY config_magic 3000
+tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set cGATEWAY config_magic "}},{"text":" ["},{"score":{"name":"cGATEWAY","objective":"config_magic"},"color":"aqua"},{"text":"] XP Cost of the Gateway Spell. "}]}
+
 tellraw @s {"text":"================================================","color":"gray"}

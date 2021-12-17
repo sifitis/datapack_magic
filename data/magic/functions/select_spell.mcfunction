@@ -86,6 +86,11 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mass Teleport"}}]}] at @s if score bMASS_TP config_magic matches ..0 run function magic:spells/fail/mass_teleport_fail
 #-- This spell requires doing an XP pass/fail check AFTER deciding if it is setting or engaging the teleport because it only charges when doing one or the other depending on the config --#
 
+#Gateway
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Gateway"}}]}] at @s if score bGATEWAY config_magic matches 1.. run function magic:spells/gateway
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Gateway"}}]}] at @s if score bGATEWAY config_magic matches ..0 run function magic:spells/fail/gateway_fail
+#-- This spell requires doing an XP pass/fail check AFTER deciding if it is setting or unsetting the teleport because it only charges when doing one or the other depending on the config --#
+
 #===Somatics===#
 
 #Vitalize
