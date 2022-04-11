@@ -1,4 +1,6 @@
 
+function magic:sound_effects/use_fail
+
 #Store position data
 execute store result score gateX gateway run data get entity @s Inventory[{Slot:-106b}].tag.TeleportData.EntryPos[0]
 execute store result score gateY gateway run data get entity @s Inventory[{Slot:-106b}].tag.TeleportData.EntryPos[1]

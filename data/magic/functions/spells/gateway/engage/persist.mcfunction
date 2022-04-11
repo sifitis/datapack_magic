@@ -5,9 +5,15 @@
 
 #execute if score @s cd_gateway matches 0 run function magic:spells/gateway/engage/portal_effects
 execute if score @s cd_gateway matches 0 run function magic:visual_effects/soulflame_ring_small
-execute if score @s cd_gateway matches -4 run function magic:visual_effects/soulflame_ring_med
-#function magic:visual_effects/witch_triangle_large
+
+execute if score @s cd_gateway matches 0 facing ~1 ~ ~ positioned ~-1 ~ ~ run function magic:visual_effects/soulflame_ring_small_half
+execute if score @s cd_gateway matches 0 facing ~-0.5 ~ ~.86602 positioned ~0.5 ~ ~-.86602 run function magic:visual_effects/soulflame_ring_small_half
+execute if score @s cd_gateway matches 0 facing ~-0.5 ~ ~-.86602 positioned ~0.5 ~ ~.86602 run function magic:visual_effects/soulflame_ring_small_half
+
+execute if score @s cd_gateway matches -4 run function magic:visual_effects/soulflame_ring_r4_low_res
+
 execute if score @s cd_gateway matches -8 run function magic:visual_effects/soulflame_ring_large
+
 execute if score @s cd_gateway matches 0 run particle firework ~ ~1 ~ 0.3 1 0.3 0 30 force
 execute if score @s cd_gateway matches -6 run particle firework ~ ~1 ~ 0.3 1 0.3 0 30 force
 
