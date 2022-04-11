@@ -12,4 +12,4 @@ execute as @s[tag=mm_blessing] at @s run function magic:spells/mm_blessing/persi
 #execute as @s[tag=teleport_engage] at @s run function magic:spells/teleport/engage/persist
 execute as @s[tag=levitate] at @s run function magic:spells/levitate/persist
 execute as @s[tag=smelt] at @s run function magic:spells/smelt/persist
-execute as @s[tag=dprism] at @s run function magic:spells/deep_prism/persist
+#execute as @s[tag=dprism] at @s run function magic:spells/deep_prism/persist

@@ -10,10 +10,10 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at @s if score bPREST config_magic matches ..0 run function magic:spells/fail/prestidigitation_fail
 
 #Deep Prism
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score @s __xp >= cDPRISM config_magic if score bDPRISM config_magic matches 1.. unless entity @s[tag=dprism] run function magic:spells/deep_prism
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s unless score @s __xp >= cDPRISM config_magic run function magic:spells/fail/deep_prism_fail
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score bDPRISM config_magic matches ..0 run function magic:spells/fail/deep_prism_fail
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if entity @s[tag=dprism] run function magic:spells/fail/deep_prism_fail
+#execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score @s __xp >= cDPRISM config_magic if score bDPRISM config_magic matches 1.. unless entity @s[tag=dprism] run function magic:spells/deep_prism
+#execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s unless score @s __xp >= cDPRISM config_magic run function magic:spells/fail/deep_prism_fail
+#execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if score bDPRISM config_magic matches ..0 run function magic:spells/fail/deep_prism_fail
+#execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Deep Prism"}}]}] at @s if entity @s[tag=dprism] run function magic:spells/fail/deep_prism_fail
 
 #===Pyromancy===#
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s if score @s __xp >= cFIREBALL config_magic if score bFIREBALL config_magic matches 1.. run function magic:spells/fireball

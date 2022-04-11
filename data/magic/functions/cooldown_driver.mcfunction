@@ -21,4 +21,4 @@ execute as @a if score @s cd_geyser matches 1.. run scoreboard players remove @s
 execute as @a at @s if score @s cd_geyser matches ..-1 run function magic:spells/geyser/loop
 
 #Deep Prism
-execute as @a if score @s cd_dprism matches 1.. run scoreboard players remove @s cd_cdprism 1
+#execute as @a if score @s cd_dprism matches 1.. run scoreboard players remove @s cd_cdprism 1
