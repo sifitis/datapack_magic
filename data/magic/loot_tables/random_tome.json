@@ -1,0 +1,84 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_feast"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_fireball"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_jump"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_levitate"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_luminance"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_mass_teleport"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_mm_blessing"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_prest"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_rain"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_restore"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_silence"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_smelt"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_sunny_day"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_teleport"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome_vitalize"
+                }
+            ]
+        }
+    ]
+}
