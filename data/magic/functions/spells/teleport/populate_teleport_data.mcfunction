@@ -1,5 +1,5 @@
 
-loot spawn ~ ~1 ~ loot magic:tome_teleport
+loot spawn ~ ~ ~ loot magic:tome_teleport
 
 tag @e[type=item,distance=..1,limit=1,nbt={Age:0s}] add teleport_book
 
