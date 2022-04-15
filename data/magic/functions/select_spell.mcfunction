@@ -61,6 +61,7 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at
 
 #Levitate
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if score @s __xp >= cLEVITATE config_magic if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if entity @s[tag=levitate] if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s unless score @s __xp >= cLEVITATE config_magic run function magic:spells/fail/levitate_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if score bLEVITATE config_magic matches ..0 run function magic:spells/fail/levitate_fail
 
