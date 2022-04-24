@@ -14,7 +14,6 @@ execute as @e[distance=..1,tag=teleport_book] store result entity @s Item.tag.Ga
 execute if predicate predicate_lib:dimension/in_overworld as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 0
 execute if predicate predicate_lib:dimension/in_nether as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 1
 execute if predicate predicate_lib:dimension/in_end as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 2
-execute if predicate predicate_lib:dimension/in_deep_prism as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.Dim set value 3
 
 # Position of gateway entrance
 execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.TeleportData.EntryPos set from entity @e[distance=..1,tag=teleport_caster,limit=1] Pos
