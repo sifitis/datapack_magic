@@ -1,21 +1,17 @@
+
 function magic:sound_effects/use_scroll
 
-#-------------------------------------COST CONTROL--------------------------------------------#
-scoreboard players operation XP_DELTA reduce_xp = cMM_BLESSING config_magic
-function magic:reduce_xp
-#---------------------------------------------------------------------------------------------#
+scoreboard objectives add mm_blessing dummy
 
-playsound minecraft:block.bubble_column.upwards_inside master @s ~ ~ ~ 3 0
-tag @s add mm_blessing
-scoreboard players add @s persistance 1
+scoreboard players set MMB_ACTIVE mm_blessing 0
+execute if score @s cd_mm_blessing matches 1.. run scoreboard players set MMB_ACTIVE mm_blessing 1
 
-scoreboard objectives add cd_mm_blessing dummy
-scoreboard players operation @s cd_mm_blessing = ttlMM_BLESSING config_magic
-scoreboard players operation CD_TTL cd_mm_blessing = ttlMM_BLESSING config_magic
+execute if score MMB_ACTIVE mm_blessing matches 0 run function magic:spells/mm_blessing/give
+execute if score MMB_ACTIVE mm_blessing matches 1 run function magic:spells/mm_blessing/take
 
-#---------------------------------------------------------------------------------------------#
-# EVERYTHING BELOW THIS LINE IS FOR RETURNING THE SCROLL ITEMS AFTER YOU USE ONE
-#---------------------------------------------------------------------------------------------#
+scoreboard objectives remove mm_blessing
+
+#---Book Item Return---#
 
 item replace entity @s weapon.offhand with minecraft:air
 function magic:givebook/mm_blessing

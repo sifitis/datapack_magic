@@ -55,15 +55,15 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Geyser"}}]}] at @s if scor
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if score @s __xp >= cMM_BLESSING config_magic if score bMM_BLESSING config_magic matches 1.. unless entity @s[tag=mm_blessing] run function magic:spells/mm_blessing
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s unless score @s __xp >= cMM_BLESSING config_magic run function magic:spells/fail/mm_blessing_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if score bMM_BLESSING config_magic matches ..0 run function magic:spells/fail/mm_blessing_fail
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if entity @s[tag=mm_blessing] run function magic:spells/fail/mm_blessing_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Mermaids Blessing"}}]}] at @s if entity @s[tag=mm_blessing] if score bMM_BLESSING config_magic matches 1.. run function magic:spells/mm_blessing
 
 #===Aeromancy===#
 
 #Levitate
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if score @s __xp >= cLEVITATE config_magic if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
-execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if entity @s[tag=levitate] if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s unless score @s __xp >= cLEVITATE config_magic run function magic:spells/fail/levitate_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if score bLEVITATE config_magic matches ..0 run function magic:spells/fail/levitate_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Levitate"}}]}] at @s if entity @s[tag=levitate] if score bLEVITATE config_magic matches 1.. run function magic:spells/levitate
 
 #Silence
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Silence"}}]}] at @s if score @s __xp >= cSILENCE config_magic if score bSILENCE config_magic matches 1.. run function magic:spells/silence

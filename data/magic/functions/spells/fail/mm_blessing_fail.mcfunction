@@ -7,6 +7,3 @@ execute if score bWARN_LO_XP config_magic matches 1.. run title @s actionbar {"t
 
 #Failed because spell disabled
 execute if score bMM_BLESSING config_magic matches ..0 run title @s actionbar {"text":"Spell Disabled in Datapack Config Panel","color":"red"}
-
-#Failed because already used
-execute if entity @s[tag=mm_blessing] run title @s actionbar {"text":"You're already using that spell!","color":"red"}
