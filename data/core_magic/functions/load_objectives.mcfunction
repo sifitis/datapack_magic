@@ -19,6 +19,7 @@ execute in minecraft:the_end run forceload add 0 0
 function config:config_magic
 function config:config_magic/config_spells
 function config:config_magic/config_spells/arcanism
+function config:config_magic/config_spells/abjuration
 function config:config_magic/config_spells/pyromancy
 function config:config_magic/config_spells/hydromancy
 function config:config_magic/config_spells/aeromancy

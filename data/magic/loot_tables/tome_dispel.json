@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,Spell:\"Dispel\",display:{Lore:['{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Dispel\",\"color\":\"#CC2222\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

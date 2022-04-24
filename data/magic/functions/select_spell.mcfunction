@@ -9,6 +9,12 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at 
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at @s unless score @s __xp >= cPREST config_magic run function magic:spells/fail/prestidigitation_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Prestidigitation"}}]}] at @s if score bPREST config_magic matches ..0 run function magic:spells/fail/prestidigitation_fail
 
+#===Abjuration===#
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Dispel"}}]}] at @s if score @s __xp >= cDISPEL config_magic if score bDISPEL config_magic matches 1.. run function magic:spells/dispel
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Dispel"}}]}] at @s unless score @s __xp >= cDISPEL config_magic run function magic:spells/fail/dispel_fail
+execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Dispel"}}]}] at @s if score bDISPEL config_magic matches ..0 run function magic:spells/fail/dispel_fail
+
+
 #===Pyromancy===#
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s if score @s __xp >= cFIREBALL config_magic if score bFIREBALL config_magic matches 1.. run function magic:spells/fireball
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Fireball"}}]}] at @s unless score @s __xp >= cFIREBALL config_magic run function magic:spells/fail/fireball_fail
@@ -18,7 +24,9 @@ execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s unless score @s __xp >= cSMELT config_magic run function magic:spells/fail/smelt_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score bSMELT config_magic matches ..0 run function magic:spells/fail/smelt_fail
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if entity @s[tag=smelt] run function magic:spells/fail/smelt_fail
+
 #===Geomancy===#
+
 
 #===Purification===#
 execute as @a[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Restore"}}]}] at @s if score @s __xp >= cRESTORE config_magic if score bRESTORE config_magic matches 1.. run function magic:spells/restore
