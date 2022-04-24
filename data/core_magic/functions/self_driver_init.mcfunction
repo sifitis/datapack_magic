@@ -3,3 +3,4 @@
 #This is mostly used for functions that don't need to be run every tick.
 
 function magic:spells/deep_prism/prism_warden/a
+function core_magic:trigger_control

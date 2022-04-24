@@ -8,6 +8,7 @@ scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
 scoreboard objectives add persistance dummy
 scoreboard objectives add magic_temp dummy
+scoreboard objectives add tomes trigger
 
 function core_magic:self_driver_init
 execute in minecraft:overworld run forceload add 0 0
