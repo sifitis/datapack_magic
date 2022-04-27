@@ -9,8 +9,9 @@ execute store result score .i check_am run data get storage magic:virtual_object
 function magic:check_antimagic/a
 
 #if am_applied == true, fail the spell
-execute if score am_applied check_am matches 1 run function magic:select_spell
-execute if score am_applied check_am matches 1 run tellraw @s {"text":"In AMZ!"}
+execute if score am_applied check_am matches 1 run function magic:fail_spell
+execute if score am_applied check_am matches 1 run title @s actionbar {"text":"An antimagic field supresses your spell!","color":"#CC2222"}
+execute if score am_applied check_am matches 1 run particle dust 1 0 .1 1 ~ ~.5 ~ 5 5 5 0 300 force @s
 
 #if am_applied == false, do select_spell
 execute if score am_applied check_am matches 0 run function magic:select_spell
