@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Smelt\",display:{Lore:['{\"text\":\"§r§8With this tome, a smoldering\"}','{\"text\":\"§r§8fire quickly grows in your\"}','{\"text\":\"§r§8hand hot enough to instantly\"}','{\"text\":\"§r§8cook anything you hold.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Smelt\",\"color\":\"red\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,Spell:\"Smelt\",display:{Lore:['{\"text\":\"§r§8With this tome, a smoldering\"}','{\"text\":\"§r§8fire quickly grows in your\"}','{\"text\":\"§r§8hand hot enough to instantly\"}','{\"text\":\"§r§8cook anything you hold.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Smelt\",\"color\":\"#CC5522\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Fireball\",display:{Lore:['{\"text\":\"§r§8The tome is crackling with a \"}','{\"text\":\"§r§8violent fiery energy. You feel \"}','{\"text\":\"§r§8that calling on this energy would\"}','{\"text\":\"§r§8cause it to burst out and ignite\"}','{\"text\":\"§r§8anything within a small radius.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Fireball\",\"color\":\"red\"},{\"text\":\")\"}]}'}}"
+                            "tag": "{SpellTome:1b,Spell:\"Fireball\",display:{Lore:['{\"text\":\"§r§8The tome is crackling with a \"}','{\"text\":\"§r§8violent fiery energy. You feel \"}','{\"text\":\"§r§8that calling on this energy would\"}','{\"text\":\"§r§8cause it to burst out and ignite\"}','{\"text\":\"§r§8anything within a small radius.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Fireball\",\"color\":\"#CC5522\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }
