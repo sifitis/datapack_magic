@@ -8,7 +8,7 @@ execute store result score SLOTS magic_temp run data get entity @s Inventory
 scoreboard objectives add check_am dummy
 scoreboard players set am_applied check_am 0
 data modify storage magic:virtual_objects antimagic_zones_temp set from storage magic:virtual_objects antimagic_zones
-execute store result score .i check_am run data get storage magic:virtual_objects antimagic_zones_test
+execute store result score .i check_am run data get storage magic:virtual_objects antimagic_zones_temp
 
 function magic:check_antimagic/a
 
