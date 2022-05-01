@@ -3,6 +3,10 @@
 
 # Before any book returning can be done, this needs to happen
 execute store result score SLOTS magic_temp run data get entity @s Inventory
+execute if data entity @s {Inventory:[{Slot:103b}]} run scoreboard players remove SLOTS magic_temp 1
+execute if data entity @s {Inventory:[{Slot:102b}]} run scoreboard players remove SLOTS magic_temp 1
+execute if data entity @s {Inventory:[{Slot:101b}]} run scoreboard players remove SLOTS magic_temp 1
+execute if data entity @s {Inventory:[{Slot:100b}]} run scoreboard players remove SLOTS magic_temp 1
 
 # Actual part of the function
 scoreboard objectives add check_am dummy
