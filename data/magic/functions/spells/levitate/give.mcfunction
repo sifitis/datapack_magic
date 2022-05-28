@@ -10,5 +10,5 @@ scoreboard objectives add cd_levitate dummy
 scoreboard players set @s cd_levitate 600
 scoreboard players set CD_TTL cd_levitate 600
 
-tag @s add persistant
+scoreboard players add @s persistance 1
 tag @s add levitate

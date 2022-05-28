@@ -9,7 +9,8 @@ tellraw @s {"text":"","color":"gray","extra":[{"text":"[<<BACK] ","color":"dark_
 tellraw @s {"text":""}
 
 tellraw @s {"text":"[ARCANISM] ","color":"dark_purple","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/arcanism"}}
-tellraw @s {"text":"[PYROMANCY] ","color":"red","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/pyromancy"}}
+tellraw @s {"text":"[ABJURATION] ","color":"#CC2222","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/abjuration"}}
+tellraw @s {"text":"[PYROMANCY] ","color":"#CC5522","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/pyromancy"}}
 tellraw @s {"text":"[PURIFICATION] ","color":"yellow","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/purification"}}
 tellraw @s {"text":"[HYDROMANCY] ","color":"blue","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/hydromancy"}}
 tellraw @s {"text":"[OURANOMANCY] ","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function config:config_magic/config_spells/ouranomancy"}}

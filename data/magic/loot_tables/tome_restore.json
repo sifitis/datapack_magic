@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Restore\",display:{Lore:['{\"text\":\"§r§8-#DESCRIPTION#-\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Restore\",\"color\":\"yellow\"},{\"text\":\")\"}]}'},Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                            "tag": "{SpellTome:1b,Spell:\"Restore\",display:{Lore:['{\"text\":\"§r§8The spell inscribed within these\"}','{\"text\":\"§r§8pages seems intended to cleanse\"}','{\"text\":\"§r§8the undead and restore them to\"}','{\"text\":\"§r§8life.  Its range appears rather\"}','{\"text\":\"§r§8limited, however.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Restore\",\"color\":\"yellow\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

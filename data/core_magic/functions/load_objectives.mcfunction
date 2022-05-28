@@ -4,14 +4,23 @@
 #      Outputs: None
 #    Tagged in: #minecraft:load
 
-tellraw @a {"text":"Running SpellTome v2.2.1 by sifitis","color":"dark_purple"}
-
 scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
+scoreboard objectives add persistance dummy
+scoreboard objectives add magic_temp dummy
+scoreboard objectives add is_sneaking dummy
+scoreboard objectives add tomes trigger
 
+function core_magic:self_driver_init
+execute in minecraft:overworld run forceload add 0 0
+execute in minecraft:the_nether run forceload add 0 0
+execute in minecraft:the_end run forceload add 0 0
+
+#===These get run to initialize all config vars==#
 function config:config_magic
 function config:config_magic/config_spells
 function config:config_magic/config_spells/arcanism
+function config:config_magic/config_spells/abjuration
 function config:config_magic/config_spells/pyromancy
 function config:config_magic/config_spells/hydromancy
 function config:config_magic/config_spells/aeromancy
@@ -20,18 +29,23 @@ function config:config_magic/config_spells/geomancy
 function config:config_magic/config_spells/somatics
 
 
-
 #=========MATH STUFF=============#
 function math:util_random/generate_obj
-
 function math:util_constants/generate_obj
+#================================#
+
 
 #   used in magic:calc_current_xp
-scoreboard players set CONST_405 m_constants 405
-scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_10 m_constants 10
+scoreboard players set CONST_16 m_constants 16
+scoreboard players set CONST_25 m_constants 25
 scoreboard players set CONST_45 m_constants 45
+scoreboard players set CONST_405 m_constants 405
 scoreboard players set CONST_1625 m_constants 1625
+scoreboard players set CONST_MAX m_constants
+
+# used in witch_shafts_10 VFX
+scoreboard players set CONST_21 m_constants 21
 #================================#
 
 
@@ -39,3 +53,5 @@ scoreboard players set CONST_1625 m_constants 1625
 team add no_collision
 team modify no_collision collisionRule never
 #===============================#
+
+function core_magic:splash

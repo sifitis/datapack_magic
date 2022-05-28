@@ -26,4 +26,13 @@ execute unless score bSD_NEEDS_SUN config_magic matches -2147483648..2147483647 
 execute if score bSD_NEEDS_SUN config_magic matches ..0 run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bSD_NEEDS_SUN config_magic 1"}},{"text":" ["},{"text":"FALSE","color":"red"},{"text":"] Sunny Day Spell requires it be daytime. "}]}
 execute if score bSD_NEEDS_SUN config_magic matches 1.. run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bSD_NEEDS_SUN config_magic 0"}},{"text":" ["},{"text":"TRUE","color":"green"},{"text":"] Sunny Day Spell requires it be daytime. "}]}
 
+tellraw @s {"text":""}
+
+execute unless score bLUMINANCE config_magic matches -2147483648..2147483647 run scoreboard players set bLUMINANCE config_magic 1
+execute if score bLUMINANCE config_magic matches ..0 run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bLUMINANCE config_magic 1"}},{"text":" ["},{"text":"FALSE","color":"red"},{"text":"] Allow Luminance Spell. "}]}
+execute if score bLUMINANCE config_magic matches 1.. run tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/scoreboard players set bLUMINANCE config_magic 0"}},{"text":" ["},{"text":"TRUE","color":"green"},{"text":"] Allow Luminance Spell. "}]}
+
+execute unless score cLUMINANCE config_magic matches -2147483648..2147483647 run scoreboard players set cLUMINANCE config_magic 200
+tellraw @s {"text":"","color":"gray","extra":[{"text":"[EDIT]","color":"dark_gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set cLUMINANCE config_magic "}},{"text":" ["},{"score":{"name":"cLUMINANCE","objective":"config_magic"},"color":"aqua"},{"text":"] XP Cost of the Luminance Spell "}]}
+
 tellraw @s {"text":"================================================","color":"gray"}

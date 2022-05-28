@@ -3,7 +3,7 @@ data merge storage magic:better_tp {temp:{Pos:[0.0d,0.0d,0.0d],Rot:[0.0d,0.0d],D
 
 data modify storage magic:better_tp temp.Pos set from entity @s data.TeleportData.Pos
 data modify storage magic:better_tp temp.Rot set from entity @s data.TeleportData.Rot
-data modify storage magic:better_tp temp.Rot set from entity @s data.TeleportData.Dim
+data modify storage magic:better_tp temp.Dim set from entity @s data.TeleportData.Dim
 
 particle minecraft:soul_fire_flame ~ ~ ~ 0.2 1 0.2 0.05 300
 particle minecraft:firework ~ ~ ~ 1 1 1 0 100

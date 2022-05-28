@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,Spell:\"Luminance\",display:{Lore:['{\"text\":\"§r§8The pages in this book glow with\"}','{\"text\":\"§r§8an aetherial energy.  Perhaps\"}','{\"text\":\"§r§8drawing on its power might even\"}','{\"text\":\"§r§8create a persistant glow where you\"}','{\"text\":\"§r§8cast it.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Luminance\",\"color\":\"yellow\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

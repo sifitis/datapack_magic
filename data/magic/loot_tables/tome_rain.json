@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Rain\",display:{Lore:['{\"text\":\"§r§8-#DESCRIPTION#-\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Rain\",\"color\":\"blue\"},{\"text\":\")\"}]}'},Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                            "tag": "{SpellTome:1b,Spell:\"Rain\",display:{Lore:['{\"text\":\"§r§8Behind the cover of this tome, you\"}','{\"text\":\"§r§8feel the unbridled power of a\"}','{\"text\":\"§r§8thunderstorm demanding to be\"}','{\"text\":\"§r§8unleashed. It may be difficult to\"}','{\"text\":\"§r§8control how the weather changes\"}','{\"text\":\"§r§8once free, however…\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Rain\",\"color\":\"blue\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }

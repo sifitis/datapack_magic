@@ -14,5 +14,3 @@ scoreboard players set M m_random 2147483647
 
 #generates initial X0 value based on world seed
 execute store result score X m_random run seed
-
-tellraw @a {"text":"Done.","color":"yellow"}

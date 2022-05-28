@@ -1,2 +1,2 @@
 
-execute as @a[tag=magic_jump] run effect clear @s minecraft:levitation
+schedule function magic:spells/jump/clear_levitation/c 1t append

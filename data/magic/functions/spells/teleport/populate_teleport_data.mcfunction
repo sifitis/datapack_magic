@@ -1,5 +1,5 @@
 
-loot spawn ~ ~1 ~ loot magic:tome_teleport
+loot spawn ~ ~ ~ loot magic:tome_teleport
 
 tag @e[type=item,distance=..1,limit=1,nbt={Age:0s}] add teleport_book
 
@@ -21,6 +21,6 @@ execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag
 execute as @e[distance=..1,tag=teleport_book] store result entity @s Item.tag.TeleportData.Display.Pos[0] int 1 run scoreboard players get Xpos teleport
 execute as @e[distance=..1,tag=teleport_book] store result entity @s Item.tag.TeleportData.Display.Pos[1] int 1 run scoreboard players get Ypos teleport
 execute as @e[distance=..1,tag=teleport_book] store result entity @s Item.tag.TeleportData.Display.Pos[2] int 1 run scoreboard players get Zpos teleport
-execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.display.Lore prepend value '[{"score":{"name":"Xpos","objective":"teleport"}},{"text":", "},{"score":{"name":"Ypos","objective":"teleport"}},{"text":", "},{"score":{"name":"Zpos","objective":"teleport"}},{"text":"]"}]'
-execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.display.Lore prepend value [{"entity":"@s","nbt":"Item.tag.TeleportData.Display.Pos[0]","interpret":true}]
+#execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.display.Lore prepend value '[{"score":{"name":"Xpos","objective":"teleport"}},{"text":", "},{"score":{"name":"Ypos","objective":"teleport"}},{"text":", "},{"score":{"name":"Zpos","objective":"teleport"}},{"text":"]"}]'
+#execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.display.Lore prepend value [{"entity":"@s","nbt":"Item.tag.TeleportData.Display.Pos[0]","interpret":true}]
 execute as @e[distance=..1,tag=teleport_book] run data modify entity @s Item.tag.display.Lore prepend value '{"text":"§3Coordinates Set§r"}'

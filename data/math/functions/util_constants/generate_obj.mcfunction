@@ -45,5 +45,3 @@ scoreboard players set CONST_90 m_constants 90
 scoreboard players set CONST_120 m_constants 120
 
 scoreboard players set CONST_2e30 m_constants 1073741824
-
-tellraw @a {"text":"Done.","color":"yellow"}

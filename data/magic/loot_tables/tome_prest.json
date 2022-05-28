@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{SpellTome:1b,Spell:\"Prestidigitation\",display:{Lore:['{\"text\":\"§r§8Stuff go poof.\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Prestidigitation\",\"color\":\"dark_purple\"},{\"text\":\")\"}]}'},Enchantments:[{lvl:1, id:\"minecraft:channeling\"}]}"
+                            "tag": "{SpellTome:1b,Spell:\"Prestidigitation\",display:{Lore:['{\"text\":\"§r§8This tome contains an inexpensive\"}','{\"text\":\"§r§8and simple sensory spell.  Using it\"}','{\"text\":\"§r§8produces a random visual or\"}','{\"text\":\"§r§8auditory phenomenon.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Prestidigitation\",\"color\":\"dark_purple\"},{\"text\":\")\"}]}'}}"
                         }
                     ]
                 }
