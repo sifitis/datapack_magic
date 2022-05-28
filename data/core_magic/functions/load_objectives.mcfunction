@@ -8,6 +8,7 @@ scoreboard objectives add __xp dummy
 scoreboard objectives add config_magic dummy
 scoreboard objectives add persistance dummy
 scoreboard objectives add magic_temp dummy
+scoreboard objectives add lum_lvl dummy
 scoreboard objectives add is_sneaking dummy
 scoreboard objectives add tomes trigger
 

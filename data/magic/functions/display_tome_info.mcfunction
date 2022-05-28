@@ -29,3 +29,6 @@ execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Feast"}}] r
 
 execute if score COST magic_temp <= @s __xp run title @s actionbar [{"text":"Total XP: ","color":"#99FF44"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}}]
 execute if score COST magic_temp > @s __xp run title @s actionbar [{"text":"Total XP: ","color":"red"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}}]
+
+#unique to luminance
+execute if score COST magic_temp <= @s __xp run title @s actionbar [{"text":"Total XP: ","color":"#99FF44"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}},{"text":"  Luminance level: ","color":"yellow"},{"score":{"name":"@s","objective":"lum_lvl"},"color":"yellow"}]

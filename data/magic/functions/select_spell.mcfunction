@@ -37,8 +37,9 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s if s
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s unless score @s __xp >= cSUNNY_DAY config_magic run function magic:spells/fail/sunny_day_fail
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Sunny Day"}}]}] at @s if score bSUNNY_DAY config_magic matches ..0 run function magic:spells/fail/sunny_day_fail
 
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score @s __xp >= cLUMINANCE config_magic if score bLUMINANCE config_magic matches 1.. run function magic:spells/luminance
-execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s unless score @s __xp >= cLUMINANCE config_magic run function magic:spells/fail/luminance_fail
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score @s is_sneaking matches 0 if score @s __xp >= cLUMINANCE config_magic if score bLUMINANCE config_magic matches 1.. run function magic:spells/luminance
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score @s is_sneaking matches 1 if score bLUMINANCE config_magic matches 1.. run function magic:spells/luminance/cycle_level
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score @s is_sneaking matches 0 unless score @s __xp >= cLUMINANCE config_magic run function magic:spells/fail/luminance_fail
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Luminance"}}]}] at @s if score bLUMINANCE config_magic matches ..0 run function magic:spells/fail/luminance_fail
 
 #===Hydromancy===#
