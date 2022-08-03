@@ -25,6 +25,10 @@ execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s unless s
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if score bSMELT config_magic matches ..0 run function magic:spells/fail/smelt_fail
 execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Smelt"}}]}] at @s if entity @s[tag=smelt] run function magic:spells/fail/smelt_fail
 
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Salamanders Safeguard"}}]}] at @s if score @s __xp >= cSALAMANDER config_magic if score bSALAMANDER config_magic matches 1.. unless entity @s[tag=salamander] run function magic:spells/salamander
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Salamanders Safeguard"}}]}] at @s unless score @s __xp >= cSALAMANDER config_magic run function magic:spells/fail/salamander_fail
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Salamanders Safeguard"}}]}] at @s if score bSALAMANDER config_magic matches ..0 run function magic:spells/fail/salamander_fail
+execute as @s[nbt={Inventory:[{Slot:-106b,tag:{Spell:"Salamanders Safeguard"}}]}] at @s if entity @s[tag=salamander] if score bSALAMANDER config_magic matches 1.. run function magic:spells/salamander
 #===Geomancy===#
 
 

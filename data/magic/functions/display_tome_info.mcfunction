@@ -7,6 +7,7 @@ execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Dispel"}}] 
 
 execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Fireball"}}] run scoreboard players operation COST magic_temp = cFIREBALL config_magic
 execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Smelt"}}] run scoreboard players operation COST magic_temp = cSMELT config_magic
+execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Salamanders Safeguard"}}] run scoreboard players operation COST magic_temp = cSALAMANDER config_magic
 
 execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Restore"}}] run scoreboard players operation COST magic_temp = cRESTORE config_magic
 execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Sunny Day"}}] run scoreboard players operation COST magic_temp = cSUNNY_DAY config_magic
@@ -31,4 +32,4 @@ execute if score COST magic_temp <= @s __xp run title @s actionbar [{"text":"Tot
 execute if score COST magic_temp > @s __xp run title @s actionbar [{"text":"Total XP: ","color":"red"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}}]
 
 #unique to luminance
-execute if score COST magic_temp <= @s __xp run title @s actionbar [{"text":"Total XP: ","color":"#99FF44"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}},{"text":"  Luminance level: ","color":"yellow"},{"score":{"name":"@s","objective":"lum_lvl"},"color":"yellow"}]
+execute if data storage magic:temp SelectedItemSlotData[{tag:{Spell:"Luminance"}}] if score COST magic_temp <= @s __xp run title @s actionbar [{"text":"Total XP: ","color":"#99FF44"},{"score":{"name":"@s","objective":"__xp"}},{"text":"  Cost: "},{"score":{"name":"COST","objective":"magic_temp"}},{"text":"  Luminance level: ","color":"yellow"},{"score":{"name":"@s","objective":"lum_lvl"},"color":"yellow"}]

@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "magic:tome",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SpellTome:1b,Spell:\"Salamanders Safeguard\",display:{Lore:['{\"text\":\"§r§8This tome is enchanted\"}','{\"text\":\"§r§8with the protective magics\"}','{\"text\":\"§r§8of a powerful fire salamander.\"}','{\"text\":\"§r§8This magic could likely protect\"}','{\"text\":\"§r§8you if used correctly.\"}','{\"text\":\"§r§7[Place in offhand slot to use]\"}'],Name:'{\"text\":\"Spell Tome (\",\"italic\":false,\"color\":\"gray\",\"extra\":[{\"text\":\"Salamander\\'s Safeguard\",\"color\":\"#CC5522\"},{\"text\":\")\"}]}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
