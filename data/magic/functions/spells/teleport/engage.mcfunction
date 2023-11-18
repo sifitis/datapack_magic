@@ -5,16 +5,18 @@ execute if score bTP_COST_ON_SET config_magic matches ..0 run scoreboard players
 execute if score bTP_COST_ON_SET config_magic matches ..0 run function magic:reduce_xp
 #---------------------------------------------------------------------------------------------#
 
-data merge storage magic:better_tp {temp:{Pos:[0.0d,0.0d,0.0d],Rot:[0.0d,0.0d],Dim:0}}
-
-data modify storage magic:better_tp temp.Pos set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Pos
-data modify storage magic:better_tp temp.Rot set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Rot
+data modify storage magic:better_tp temp.PosX set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Pos[0]
+data modify storage magic:better_tp temp.PosY set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Pos[1]
+data modify storage magic:better_tp temp.PosZ set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Pos[2]
+data modify storage magic:better_tp temp.RotA set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Rot[0]
+data modify storage magic:better_tp temp.RotE set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Rot[1]
 data modify storage magic:better_tp temp.Dim set from entity @s Inventory[{Slot:-106b}].tag.TeleportData.Dim
 
 particle minecraft:soul_fire_flame ~ ~ ~ 0.2 1 0.2 0.05 300
 particle minecraft:firework ~ ~ ~ 1 1 1 0 100
 particle minecraft:firework ~ ~ ~ 0 1 0 1 100
-function magic:better_teleport/better_teleport_a
+
+function magic:better_teleport with storage magic:better_tp temp
 
 #tag @s add teleport_engage
 #tag @s add persistant

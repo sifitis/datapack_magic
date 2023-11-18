@@ -3,7 +3,6 @@ data modify entity @s data merge value {TeleportData:{Pos:[0.0d,0.0d,0.0d],Rot:[
 
 data modify entity @s data.TeleportData set from entity @a[tag=teleport_caster,limit=1] Inventory[{Slot:-106b}].tag.TeleportData
 
-
 scoreboard players operation @s cd_mtp_engage = MTP_DURATION config_magic
 scoreboard players operation @s cd_mtp_engage = MTP_DURATION config_magic
 

@@ -1,3 +1,5 @@
+# executed as caster
+
 function magic:sound_effects/use_scroll
 
 #-------------------------------------COST CONTROL--------------------------------------------#
@@ -10,8 +12,12 @@ function magic:visual_effects/soulflame_ring_small
 #function magic:visual_effects/soulflame_ring_med
 particle minecraft:firework ~ ~ ~ 1 1 1 0.01 25
 
-tag @s add teleport_setter
 item replace entity @s weapon.offhand with minecraft:air
-function magic:spells/teleport/populate_teleport_data
-tellraw @s [{"text":"Teleport coordinates set. [","color":"dark_aqua"},{"score":{"name":"Xpos","objective":"teleport"}},{"text":", "},{"score":{"name":"Ypos","objective":"teleport"}},{"text":", "},{"score":{"name":"Zpos","objective":"teleport"}},{"text":"]"}]
-tag @s remove teleport_setter
+execute store result storage temp:temp magic.spell.teleport.X double 1 run data get entity @s Pos[0]
+execute store result storage temp:temp magic.spell.teleport.Y double 1 run data get entity @s Pos[1]
+execute store result storage temp:temp magic.spell.teleport.Z double 1 run data get entity @s Pos[2]
+execute store result storage temp:temp magic.spell.teleport.A double 1 run data get entity @s Rotation[0]
+execute store result storage temp:temp magic.spell.teleport.E double 1 run data get entity @s Rotation[1]
+
+function magic:spells/teleport/populate_teleport_data with storage temp:temp magic.spell.teleport
+tellraw @s [{"text":"Teleport coordinates set.","color":"dark_aqua"}]

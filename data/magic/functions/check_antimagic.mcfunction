@@ -1,7 +1,7 @@
 
 #Run from caster
 
-# Before any book returning can be done, this needs to happen
+# Count how many inventory slots you have filled (including armor), and remove the number of filled armor slots for the total filled slots.
 execute store result score SLOTS magic_temp run data get entity @s Inventory
 execute if data entity @s {Inventory:[{Slot:103b}]} run scoreboard players remove SLOTS magic_temp 1
 execute if data entity @s {Inventory:[{Slot:102b}]} run scoreboard players remove SLOTS magic_temp 1
